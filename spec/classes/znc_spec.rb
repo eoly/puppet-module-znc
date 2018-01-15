@@ -25,6 +25,7 @@ describe 'znc' do
         it { is_expected.to contain_class('znc::service') }
 
         it { is_expected.to contain_package('znc').with_ensure('installed') }
+
         it {
           is_expected.to contain_service('znc').with(
             'ensure' => 'running',
