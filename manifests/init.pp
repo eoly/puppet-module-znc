@@ -25,7 +25,7 @@ class znc (
   Boolean $protect_web_sessions                           = $znc::params::protect_web_sessions,
   String $status_prefix                                   = $znc::params::status_prefix,
   Boolean $hide_version                                   = $znc::params::hide_version,
-  Optional[String] $motd                                  = $znc::params::motd,
+  String $motd                                            = $znc::params::motd,
   Stdlib::Absolutepath $ssl_cert_file                     = $znc::params::ssl_cert_file,
   Boolean $load_module_webadmin                           = $znc::params::load_module_webadmin,
 ) inherits znc::params {

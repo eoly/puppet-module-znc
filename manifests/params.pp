@@ -34,7 +34,7 @@ class znc::params {
   $protect_web_sessions = true
   $status_prefix        = '*'
   $hide_version         = false
-  $motd                 = ''
+  $motd                 = "ZNC running on ${facts['fqdn']}"
   $ssl_cert_file        = "${znc_home}/znc.pem"
   $load_module_webadmin = false
 
