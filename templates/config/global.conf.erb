@@ -1,0 +1,13 @@
+AnonIPLimit = <%= @anon_ip_limit -%>
+ConnectDelay = <%= @connect_delay -%>
+HideVersion = <%= @hide_version -%>
+MaxBufferSize = <%= @max_buffer_size -%>
+Motd = <%= @motd -%>
+ProtectWebSessions = <%= @protect_web_sessions -%>
+ServerThrottle = <%= @server_throttle -%>
+Skin = <%= @skin -%>
+StatusPrefix = <%= @status_prefix -%>
+SSLCertFile = <%= @ssl_cert_file -%>
+<%- if @load_module_webadmin -%>
+LoadModule = webadmin
+<%- end -%>

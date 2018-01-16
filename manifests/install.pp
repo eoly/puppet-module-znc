@@ -1,8 +1,8 @@
-# znc::package
+# znc::install
 #
-# ZNC package class
+# ZNC install class
 #
-class znc::package {
+class znc::install {
 
   $package_ensure = $znc::package_ensure
   $package_name   = $znc::package_name
