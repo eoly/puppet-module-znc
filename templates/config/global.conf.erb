@@ -2,7 +2,9 @@ AnonIPLimit = <%= @anon_ip_limit %>
 ConnectDelay = <%= @connect_delay %>
 HideVersion = <%= @hide_version %>
 MaxBufferSize = <%= @max_buffer_size %>
+<%- if @motd %>
 Motd = <%= @motd %>
+<%- end -%>
 ProtectWebSessions = <%= @protect_web_sessions %>
 ServerThrottle = <%= @server_throttle %>
 Skin = <%= @skin %>

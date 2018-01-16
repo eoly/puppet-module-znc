@@ -35,7 +35,7 @@ class znc::params {
   $status_prefix        = '*'
   $hide_version         = false
   $motd                 = ''
-  $load_module_webadmin = false
   $ssl_cert_file        = "${znc_home}/znc.pem"
+  $load_module_webadmin = false
 
 }

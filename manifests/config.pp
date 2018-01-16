@@ -18,6 +18,7 @@ class znc::config {
   $status_prefix        = $znc::status_prefix
   $hide_version         = $znc::hide_version
   $motd                 = $znc::motd
+  $ssl_cert_file        = $znc::ssl_cert_file
   $load_module_webadmin = $znc::load_module_webadmin
 
 
