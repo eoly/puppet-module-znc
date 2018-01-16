@@ -53,7 +53,7 @@ describe 'znc' do
         it { is_expected.to compile.with_all_deps }
         it { is_expected.to contain_class('znc') }
         it { is_expected.to contain_class('znc::params') }
-        it { is_expected.to contain_class('znc::package') }
+        it { is_expected.to contain_class('znc::install') }
         it { is_expected.to contain_class('znc::service') }
 
         it { is_expected.to contain_package('znc').with_ensure('installed') }

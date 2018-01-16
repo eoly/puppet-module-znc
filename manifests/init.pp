@@ -29,6 +29,7 @@ class znc (
   Boolean $load_module_webadmin                           = $znc::params::load_module_webadmin,
 ) inherits znc::params {
 
-  contain znc::package
+  contain znc::install
+  contain znc::config
   contain znc::service
 }
