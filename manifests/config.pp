@@ -22,15 +22,10 @@ class znc::config {
   $load_module_webadmin = $znc::load_module_webadmin
 
 
-  concat { $config_path:
-    owner => $znc_user,
-    group => $znc_group,
-    mode  => '0600',
-  }
-
-  concat::fragment { 'znc_global_settings':
-    target  => $config_path,
-    content => template('znc/config/global.conf.erb'),
-    order   => '01',
+  datacat { $config_path:
+    owner    => $znc_user,
+    group    => $znc_group,
+    mode     => '0600',
+    template => 'znc/config/global.conf.erb',
   }
 }
